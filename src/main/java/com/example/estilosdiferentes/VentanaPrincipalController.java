@@ -8,8 +8,7 @@ import javafx.scene.text.Font;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-
-public class Estilo1 {
+public class VentanaPrincipalController {
     @javafx.fxml.FXML
     private Label lblHoraActual;
     @javafx.fxml.FXML
@@ -19,7 +18,7 @@ public class Estilo1 {
 
     @javafx.fxml.FXML
     public void onBtnHoraClicked(ActionEvent actionEvent) {
-      System.out.println("Pulsado el botón Hora - " + actionEvent.toString());
+        System.out.println("Pulsado el botón Hora - " + actionEvent.toString());
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         lblHoraActual.setText(dtf.format(now));

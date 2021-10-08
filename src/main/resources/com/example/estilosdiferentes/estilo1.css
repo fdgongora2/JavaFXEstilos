@@ -1,3 +1,7 @@
-Button {
--fx-background-color: red;
-}
+ Button {
+ -fx-background-color: red;
+ }
+
+ .label {
+ -fx-text-fill:  blue;
+ }
